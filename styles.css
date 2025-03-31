@@ -1,85 +1,200 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background: linear-gradient(to bottom, #d4af37, #c0c0c0); /* Gold to silver gradient */
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Neutral text color */
+    background: linear-gradient(to right, #fffdd0, #ffd1dc); /* Cream to pastel pink gradient */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
-    background: linear-gradient(to right, #ff69b4, #800080); /* Gradient from pink to purple */
+    background: linear-gradient(to right, #fffdd0, #ffd1dc); /* Same cream-to-pink gradient as body */
     color: #333;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
-    border-bottom: 2px solid #e0e0e0;
     position: relative;
 }
 
 header .logo {
-    width: 150px; /* Increase the size of the logo */
+    width: 260px; /* Logo size */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #d4af37; /* Gold color */
+header .hero-content h1 {
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #b39ddb; /* Pastel purple */
 }
 
-nav ul {
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
+.menu ul li {
     display: inline;
-    margin: 0 10px;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
-    color: #d4af37; /* Gold color */
+    color: #b39ddb; /* Pastel purple */
     font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ffd1dc; /* Pastel pink hover effect */
 }
 
 main {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 section h2 {
-    color: #800080; /* Purple color */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #b39ddb; /* Pastel purple */
+    margin-bottom: 20px;
 }
 
 section p {
-    color: #ff69b4; /* Pink color */
+    font-size: 1.2em;
+    color: #333; /* Neutral text color */
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 section img {
+    width: 50%; /* Reduced to 50% of the original size */
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 5px solid #ffd1dc; /* Pastel pink border */
+}
+
+/* Testimonials Section */
+#testimonials {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #b39ddb; /* Pastel purple */
+    margin-bottom: 20px;
+}
+
+#testimonials p {
+    font-size: 1.2em;
+    color: #333; /* Neutral text color */
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
     width: 100%;
     height: auto;
-    border: 5px solid #fff; /* White border */
-    border-radius: 15px; /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better appearance */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimonial {
+    min-width: 300px;
+    margin: 0 20px;
+    text-align: center;
+    animation: scroll-loop 15s linear infinite;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffd1dc; /* Pastel pink border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for endless scrolling */
+@keyframes scroll-loop {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 footer {
-    background-color: #fff;
+    background: linear-gradient(to right, #fffdd0, #ffd1dc); /* Same cream-to-pink gradient as body */
     color: #333;
     text-align: center;
     padding: 20px;
-    border-top: 2px solid #e0e0e0;
 }
 
 footer a {
-    color: #d4af37; /* Gold color */
+    color: #b39ddb; /* Pastel purple */
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #ffd1dc; /* Pastel pink hover effect */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
 }
