@@ -1,3 +1,5 @@
+![Creart Beauty Academy Logo](path/to/logo.png)
+
 # Creart Beauty Academy Website
 
 This README provides a step-by-step guide to creating a website for a beauty academy school, including the layout, color scheme, and different sections.
@@ -52,7 +54,13 @@ The website is divided into the following sections:
 
 ### **Footer**
 - A simple footer with copyright information.
-- Example: "&copy; 2025 Creart Beauty Academy. All rights reserved."
+- Example: 
+  ```html
+  <footer>
+      <p>&copy; 2025 Creart Beauty Academy. All rights reserved.</p>
+      <p><a href="contact.html" style="color: #b39ddb; text-decoration: none;">Contact Us</a></p>
+  </footer>
+  ```
 
 ---
 
