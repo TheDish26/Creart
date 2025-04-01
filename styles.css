@@ -244,15 +244,18 @@ footer {
     padding: 20px;
 }
 
+/* Footer Links Styling */
 footer a {
-    color: #b39ddb; /* Pastel purple */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    color: #b39ddb; /* Lilac color for the link */
+    text-decoration: none; /* Remove underline */
+    font-family: 'Roboto', sans-serif; /* Match the font with the menu */
+    font-weight: bold; /* Match the font weight with the menu */
+    font-size: 1em; /* Match the font size with the menu */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 footer a:hover {
-    color: #ffd1dc; /* Pastel pink hover effect */
+    color: #ffd1dc; /* Pink color on hover */
 }
 
 /* Smooth Scrolling */
