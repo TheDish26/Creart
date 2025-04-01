@@ -1,4 +1,4 @@
-![Creart Beauty Academy Logo](path/to/logo.png)
+![Creart Beauty Academy Logo](path/to/Creart-logo-1.png)
 
 # Creart Beauty Academy Website
 
